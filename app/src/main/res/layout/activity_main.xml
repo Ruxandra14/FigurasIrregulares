@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="itchetumal.edu.mx.desapp.holamundo.figurasirregulares.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PUNTO"
+        android:id="@+id/textView1"
+        android:layout_alignBottom="@+id/edtX1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/edtX1"
+        android:layout_alignBaseline="@+id/edtY1"
+        android:layout_alignBottom="@+id/edtY1"
+        android:layout_toLeftOf="@+id/edtY1"
+        android:layout_toStartOf="@+id/edtY1" />
+
+    <EditText
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/edtY1"
+        android:layout_marginTop="141dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Punto"
+        android:id="@+id/btnG"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/edtX1"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1"
+        android:onClick="guardarPuntos"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GRAFICAR"
+        android:id="@+id/btnGrafica"
+        android:layout_alignTop="@+id/btnG"
+        android:layout_toRightOf="@+id/edtX1"
+        android:layout_toEndOf="@+id/edtX1"
+        android:onClick="graficaFigura"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Por cada punto de la figura se necesita oprimir el botón GUARDAR."
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp"
+        android:textColor="#000000" />
+
+</RelativeLayout>
